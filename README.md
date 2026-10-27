@@ -11,7 +11,12 @@ I design and build resilient, production-hardened backend services, crash-resili
 
 ### 🏛️ Featured Systems & Open-Source Architecture
 
-#### 1. Distributed Systems Resilience & Storage Engines
+#### 1. Distributed Systems Resilience, Storage & Ingestion
+* **[`sentinel-webhook-pipeline`](https://github.com/Sodototive95/sentinel-webhook-pipeline)**
+  * *High-throughput, crash-resilient asynchronous stream ingestion and webhook gateway in pure Python.*
+  * Constant-time HMAC-SHA256 signature verification (Stripe / GitHub / Hex), anti-replay timestamp validation, bounded LRU idempotency deduplication, per-tenant Token Bucket rate limiting, and backpressure-governed worker queues with zero-loss graceful drain.
+  * 100% test coverage with automated GitHub Actions CI matrix across Python 3.10–3.13.
+
 * **[`sentinel-circuit-breaker`](https://github.com/Sodototive95/sentinel-circuit-breaker)**
   * *Zero-dependency distributed resilience engine in Python.*
   * Dual synchronous and asynchronous (`asyncio`) APIs, sliding-window failure rate tracking (count and time-based), and AWS Marc Brooker exponential backoff with Full, Equal, and Decorrelated jitter.
